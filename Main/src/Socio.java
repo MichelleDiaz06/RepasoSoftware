@@ -1,4 +1,4 @@
-public class Socio {
+public class Socio extends Usuario{
     private int limiteEjemplares;
     private int ejemplaresPrestados;
     private double multasPendientes;
@@ -8,6 +8,7 @@ public class Socio {
         this.limiteEjemplares = limiteEjemplares;
         this.ejemplaresPrestados = 0;
         this.multasPendientes = 0.0;
+    }
 
     public void registrarPrestamo (int cantidad){
         if(cantidad > limiteEjemplares - ejemplaresPrestados){
