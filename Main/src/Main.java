@@ -1,5 +1,4 @@
-
-public class Main{
+public class Main {
     public static void main(String[] args) {
 
         Biblioteca biblioteca = new Biblioteca();
@@ -9,8 +8,9 @@ public class Main{
         Socio socio1 = new Socio("456", "Maria", "maria@biblioteca.com", 5);
         socio1.registrarPrestamo(2);
 
+        biblioteca.agregarSocio(socio1);
 
-
+        System.out.println(biblioteca.darSocios().get(0).darNombre());
 
     }
 }
