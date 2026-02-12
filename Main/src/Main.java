@@ -1,11 +1,17 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-        Bibliotecario bibliotecario = new Bibliotecario("1", "Pepe","pepe@gmail.com", "Mañana");{
-     System.out.println(bibliotecario.darEmail());
 
-     Socio socio = new Socio("1 ,"Juan", "juan@gmail.com", 5);
-                socio.registrarPrestamo(2);
-}}
+public class Main{
+    public static void main(String[] args) {
 
+        Biblioteca biblioteca = new Biblioteca();
+        Bibliotecario bibliotecario1 = new Bibliotecario("123", "Juan", "juan@biblioteca.com", "Mañana");
+        System.out.println(bibliotecario1.darEmail());
+
+        Socio socio1 = new Socio("456", "Maria", "maria@biblioteca.com", 5);
+        socio1.registrarPrestamo(2);
+
+
+
+
+    }
+}
 
